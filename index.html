@@ -9,18 +9,33 @@
     <title>Test</title>
     <style>
         svg.poop {
-            /* fill: brown; */
+            fill: #000;
             max-width: 6rem;
+            animation: change-color-animation 10s linear infinite;
         }
-        </style>
+        @keyframes change-color-animation {
+            0% {
+                fill: Magenta;
+            }
+            33% {
+                fill: yellow;
+            }
+            66% {
+                fill: Cyan;
+            }
+            100% {
+                fill: Magenta;
+            }
+        }
+    </style>
 </head>
 
-<body class="">
-    
+<body class="bg-dark">
+
     <div class="position-absolute top-50 start-50 translate-middle w-100">
-        
-        <main class="m-5 p-sm-5 text-center">
-            
+
+        <main class="m-5 p-sm-5 text-center text-white">
+
             <h1 class="mb-5">こんにちは</h1>
             <svg class="poop w-25 mb-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <path
